@@ -1,0 +1,264 @@
+/* ═══════════════════════════════════════════════════════════
+   ML CLOUD APP — Global Dark Tech Theme
+   ═══════════════════════════════════════════════════════════ */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Root & Body ── */
+html, body, [data-testid="stAppViewContainer"] {
+    background: #0F0F1A !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #12122A 0%, #0F0F1A 100%) !important;
+    border-right: 1px solid rgba(124, 58, 237, 0.25) !important;
+}
+[data-testid="stSidebar"] .stMarkdown h1,
+[data-testid="stSidebar"] .stMarkdown h2,
+[data-testid="stSidebar"] .stMarkdown h3 {
+    color: #A78BFA !important;
+}
+
+/* ── Main Container ── */
+.main .block-container {
+    padding: 1.5rem 2rem 2rem !important;
+    max-width: 1200px !important;
+}
+
+/* ── Metric Cards ── */
+[data-testid="metric-container"] {
+    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%) !important;
+    border: 1px solid rgba(124, 58, 237, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    transition: border-color 0.3s ease, transform 0.2s ease !important;
+}
+[data-testid="metric-container"]:hover {
+    border-color: rgba(124, 58, 237, 0.7) !important;
+    transform: translateY(-2px) !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+    color: #A78BFA !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: #E2E8F0 !important;
+    font-weight: 700 !important;
+}
+
+/* ── Buttons ── */
+.stButton > button {
+    background: linear-gradient(135deg, #7C3AED, #5B21B6) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3) !important;
+}
+.stButton > button:hover {
+    background: linear-gradient(135deg, #8B5CF6, #7C3AED) !important;
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5) !important;
+    transform: translateY(-1px) !important;
+}
+.stButton > button:active {
+    transform: translateY(0) !important;
+}
+
+/* ── Inputs & Sliders ── */
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background: #1A1A2E !important;
+    border: 1px solid rgba(124, 58, 237, 0.3) !important;
+    border-radius: 8px !important;
+    color: #E2E8F0 !important;
+    transition: border-color 0.3s !important;
+}
+.stTextInput > div > div > input:focus,
+.stNumberInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: #7C3AED !important;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15) !important;
+}
+
+.stSelectbox > div > div {
+    background: #1A1A2E !important;
+    border: 1px solid rgba(124, 58, 237, 0.3) !important;
+    border-radius: 8px !important;
+}
+
+/* ── Dataframe / Tables ── */
+[data-testid="stDataFrame"] {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(124, 58, 237, 0.2) !important;
+}
+
+/* ── Progress Bar ── */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #7C3AED, #A78BFA) !important;
+}
+
+/* ── Tabs ── */
+.stTabs [data-baseweb="tab-list"] {
+    background: #1A1A2E !important;
+    border-radius: 10px !important;
+    padding: 4px !important;
+    gap: 4px !important;
+}
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px !important;
+    color: #94A3B8 !important;
+    font-weight: 500 !important;
+}
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #7C3AED, #5B21B6) !important;
+    color: white !important;
+}
+
+/* ── Expander ── */
+.streamlit-expanderHeader {
+    background: #1A1A2E !important;
+    border-radius: 8px !important;
+    color: #A78BFA !important;
+    border: 1px solid rgba(124, 58, 237, 0.2) !important;
+}
+
+/* ── Alert/Info boxes ── */
+.stAlert {
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+/* ── File uploader ── */
+[data-testid="stFileUploader"] {
+    border: 2px dashed rgba(124, 58, 237, 0.4) !important;
+    border-radius: 12px !important;
+    background: rgba(124, 58, 237, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+[data-testid="stFileUploader"]:hover {
+    border-color: rgba(124, 58, 237, 0.8) !important;
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+/* ── Custom card component ── */
+.ml-card {
+    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+.ml-card:hover {
+    border-color: rgba(124, 58, 237, 0.6);
+    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+    transform: translateY(-2px);
+}
+.ml-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #A78BFA;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+}
+.ml-card-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E2E8F0;
+}
+
+/* ── Page title banner ── */
+.page-banner {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(91, 33, 182, 0.08) 100%);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+.page-banner h1 {
+    margin: 0 !important;
+    color: #E2E8F0 !important;
+}
+.page-banner p {
+    color: #94A3B8 !important;
+    margin: 0.25rem 0 0 !important;
+}
+
+/* ── Status badges ── */
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.badge-success { background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.badge-warning { background: rgba(245, 158, 11, 0.15); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); }
+.badge-danger  { background: rgba(239, 68, 68, 0.15); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+.badge-info    { background: rgba(124, 58, 237, 0.15); color: #A78BFA; border: 1px solid rgba(124, 58, 237, 0.3); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0F0F1A; }
+::-webkit-scrollbar-thumb { background: rgba(124, 58, 237, 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(124, 58, 237, 0.7); }
+
+/* ── Animation classes ── */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 8px rgba(124, 58, 237, 0.3); }
+    50%       { box-shadow: 0 0 20px rgba(124, 58, 237, 0.6); }
+}
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+.animate-in { animation: fadeInUp 0.4s ease forwards; }
+.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+.shimmer-text {
+    background: linear-gradient(90deg, #7C3AED, #A78BFA, #C4B5FD, #A78BFA, #7C3AED);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+/* ── Spinner override ── */
+.stSpinner > div { border-top-color: #7C3AED !important; }
+
+/* ── Code blocks ── */
+code {
+    background: rgba(124, 58, 237, 0.1) !important;
+    color: #A78BFA !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* ── Sidebar nav links ── */
+[data-testid="stSidebarNavLink"] {
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+[data-testid="stSidebarNavLink"]:hover {
+    background: rgba(124, 58, 237, 0.15) !important;
+}
+[data-testid="stSidebarNavLink"][aria-current="page"] {
+    background: rgba(124, 58, 237, 0.25) !important;
+    border-left: 3px solid #7C3AED !important;
+}

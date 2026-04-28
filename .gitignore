@@ -1,0 +1,15 @@
+# Environnement
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit secrets (local uniquement)
+.streamlit/secrets.toml
+
+# Données de cache
+cache_embeddings/
+chroma_db/
+
+# Divers
+.DS_Store
