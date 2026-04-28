@@ -21,7 +21,7 @@ def get_embedding_model():
     """Initialise le modèle d'embedding Gemini stable (v2026)."""
     # Utilisation du nom stable officiel sans préfixe selon la doc 2026
     base_embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/gemini-embedding-001", 
+        model="models/text-embedding-004", 
         task_type="retrieval_document"
     )
     
