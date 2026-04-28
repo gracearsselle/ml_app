@@ -5,7 +5,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 def get_rag_chain(vector_store):
     # 1. Initialiser Gemini (Température basse pour plus de précision académique)
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", temperature=0.1)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.1)
 
     # 2. Définir le Template de Prompt
     # C'est ici que tu donnes ses instructions à l'IA
