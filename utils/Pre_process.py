@@ -8,8 +8,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 
 # LES NOUVEAUX CHEMINS 2026 :
-from langchain_classic.storage import LocalFileStore
-from langchain_classic.embeddings import CacheBackedEmbeddings
+from langchain.storage import LocalFileStore
+from langchain.embeddings import CacheBackedEmbeddings
 
 import time
 
