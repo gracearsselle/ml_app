@@ -93,7 +93,6 @@ class GeminiLiveClient:
                             logger.info(
                                 "[%d] Turn complete (reason: %s)",
                                 msg_count,
-                                sc.turn_complete_reason,
                             )
                             break
 
