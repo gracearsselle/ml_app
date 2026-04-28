@@ -21,9 +21,9 @@ def get_embedding_model():
     """Initialise le modèle d'embedding Gemini stable (v2026)."""
     # Utilisation du nom stable officiel sans préfixe selon la doc 2026
     base_embeddings = GoogleGenerativeAIEmbeddings(
-        model="gemini-embedding-001", 
-        task_type="retrieval_document"
-    )
+    model="models/gemini-embedding-001", 
+    task_type="retrieval_document"
+)
     
     # On utilise toujours le stockage local classic
     store = LocalFileStore("./cache_embeddings/")
