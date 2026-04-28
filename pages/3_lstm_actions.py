@@ -103,7 +103,6 @@ def fetch_stock_data(ticker: str, period: str = "2y") -> pd.DataFrame:
             raise ValueError("DataFrame vide")
         return df.reset_index()
     except Exception as e:
-        st.warning(f"yfinance indisponible pour {ticker} ({e}) — données synthétiques.")
         n     = 504
         dates = pd.bdate_range(end=datetime.today(), periods=n)
         base  = {"AMZN": 170, "INTC": 20, "AMD": 120, "GE": 160}.get(ticker, 100)
@@ -191,7 +190,7 @@ def predict_future(ticker: str, df: pd.DataFrame, months: int) -> pd.DataFrame:
                 ).flatten()
 
         except Exception as e:
-            st.warning(f"⚠️ Modèle LSTM ({ticker}) — fallback heuristique : {e}")
+            
             preds = None
 
     if preds is None:
